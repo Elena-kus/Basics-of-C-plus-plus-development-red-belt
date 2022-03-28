@@ -20,7 +20,6 @@ ForwardIterator max_element_if(ForwardIterator first, ForwardIterator last, Unar
 		for(auto it = res; it!=last; it = find_if(next(it),last,pred)){
 
 			if(it==last) return it;
-
 			else if (*res < *it)
 			 res = it;
 		}
